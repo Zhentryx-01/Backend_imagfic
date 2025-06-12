@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-xs=dz9-9=tvirfv=8op)d(-vid1z^5#l54669k+p)brar8uasr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["backend-imagfic.onrender.com"]
+ALLOWED_HOSTS = ["*"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://backend-imagfic.onrender.com",
+]
 
 
 # Application definition
@@ -41,7 +45,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'api',
-    'rest_framework_simplejwt.token_blacklist'
+    'rest_framework_simplejwt.token_blacklist',
+    'drf_yasg',
 ]
 
 REST_FRAMEWORK = {
