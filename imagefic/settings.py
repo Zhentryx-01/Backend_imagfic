@@ -31,7 +31,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://backend-imagfic.onrender.com",
 ]
 
-CORS_ALLOWED_ORIGINS = ["https://backend-imagfic.onrender.com", "http://localhost:5173"]
+CORS_ALLOWED_ORIGINS = ["*"]
 
 
 # Application definition
