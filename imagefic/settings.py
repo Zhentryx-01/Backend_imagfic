@@ -31,7 +31,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://backend-imagfic.onrender.com",
 ]
 
-CORS_ALLOWED_ORIGINS = ["https://backend-imagfic.onrender.com"]
+CORS_ALLOWED_ORIGINS = ["https://backend-imagfic.onrender.com", "http://localhost:5173"]
 
 
 # Application definition
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'api',
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -69,6 +70,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'imagefic.urls'
