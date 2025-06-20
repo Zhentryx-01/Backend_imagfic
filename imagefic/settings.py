@@ -31,6 +31,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://backend-imagfic.onrender.com",
 ]
 
+# test 
 CORS_ALLOWED_ORIGINS = ["*"]
 
 
