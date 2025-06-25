@@ -37,20 +37,21 @@ ALLOWED_HOSTS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-imagfic.onrender.com",
-    "https://your-frontend-domain.com",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
 ]
+
 
 CORS_ALLOWED_ORIGINS = [
-    "https://your-frontend-domain.com",  # Must be https if your frontend is
+    "https://backend-imagfic.onrender.com",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://backend-imagfic.onrender.com",  # Allow API docs UI if needed
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    # ...any other origins you need
 ]
-
 
 # Alternative: Use CORS_ALLOW_ALL_ORIGINS only for development
 # CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all origins in debug mode
