@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "backend-imagfic.onrender.com",
-    "your-frontend-domain.com",  # Add your frontend domain
+    "imagefic-9axl.vercel.app",  # Add your frontend domain
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -41,6 +41,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    "https://imagefic-9axl.vercel.app",
 ]
 
 
@@ -50,6 +51,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    "https://imagefic-9axl.vercel.app",
     # ...any other origins you need
 ]
 
