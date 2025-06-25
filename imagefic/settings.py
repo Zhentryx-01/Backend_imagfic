@@ -26,29 +26,31 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-xs=dz9-9=tvirfv=8op)d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
+# settings.py
+
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "backend-imagfic.onrender.com",
-    # Add your frontend domain here
+    "your-frontend-domain.com",  # Add your frontend domain
 ]
 
-# CSRF Configuration
 CSRF_TRUSTED_ORIGINS = [
     "https://backend-imagfic.onrender.com",
-    "http://localhost:3000",  # Common React dev server
+    "https://your-frontend-domain.com",
+    "http://localhost:3000",
     "http://127.0.0.1:3000",
-    # Add your frontend URLs here
 ]
 
-# CORS Configuration - More specific than allowing all origins
 CORS_ALLOWED_ORIGINS = [
+    "https://your-frontend-domain.com",  # Must be https if your frontend is
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://your-frontend-domain.com",  # Replace with your actual frontend domain
+    "https://backend-imagfic.onrender.com",  # Allow API docs UI if needed
 ]
+
 
 # Alternative: Use CORS_ALLOW_ALL_ORIGINS only for development
 # CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all origins in debug mode
