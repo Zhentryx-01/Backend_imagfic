@@ -48,6 +48,7 @@ schema_view = get_schema_view(
       license=openapi.License(name="MIT License"),
    ),
    public=True,
+   url="https://backend-imagfic.onrender.com",
    permission_classes=[permissions.AllowAny],
 )
 
