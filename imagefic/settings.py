@@ -42,7 +42,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "https://imagefic-9axl.vercel.app",
-    "https://localhost:5173",
+    "http://localhost:5173",
 ]
 
 
@@ -53,10 +53,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "https://imagefic-9axl.vercel.app",
-    "https://localhost:5173",
-    
-    # ...any other origins you need
-]
+    "http://localhost:5173",
+    ]
 
 # Alternative: Use CORS_ALLOW_ALL_ORIGINS only for development
 # CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all origins in debug mode
