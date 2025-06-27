@@ -42,6 +42,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "https://imagefic-9axl.vercel.app",
+    "localhost",
 ]
 
 
@@ -52,6 +53,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     "https://imagefic-9axl.vercel.app",
+    "localhost",
     # ...any other origins you need
 ]
 
