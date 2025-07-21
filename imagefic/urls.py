@@ -16,6 +16,7 @@ schema_view = get_schema_view(
         license=openapi.License(name="BSD License"),
     ),
     public=True,
+    url="https://backend-imagfic.onrender.com",
     permission_classes=(permissions.AllowAny,),
     authentication_classes=[]  # Disable Django session login
 )
