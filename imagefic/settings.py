@@ -260,3 +260,4 @@ SWAGGER_SETTINGS = {
     },
     'USE_SESSION_AUTH': False,  # Important to disable Django login
 }
+
