@@ -247,3 +247,17 @@ LOGGING = {
         },
     },
 }
+
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header',
+            'description': 'JWT Authorization header using the Bearer scheme. Example: "Bearer {your access token}"'
+        }
+    },
+    'USE_SESSION_AUTH': False,  # Important to disable Django login
+}
+
