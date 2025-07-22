@@ -99,8 +99,11 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg',
+    'cloudinary',
+    'cloudinary_storage',
     # Local apps
     'api',
+    
 ]
 
 REST_FRAMEWORK = {
@@ -260,4 +263,15 @@ SWAGGER_SETTINGS = {
     },
     'USE_SESSION_AUTH': False,  # Important to disable Django login
 }
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dfjklcb69',
+    'API_KEY': '861226775294513',
+    'API_SECRET': 'dzWdocvAlsy4MDzXN-uDZRrfcjM'
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
 
